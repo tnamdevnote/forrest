@@ -7,3 +7,17 @@ export const client = createClient({
   apiVersion: "2024-06-02", // use current date (YYYY-MM-DD) to target the latest API version
   // token: process.env.SANITY_SECRET_TOKEN // Only if you want to update content with the client
 });
+
+export async function getLeaders() {
+  const leaders = await client.fetch(`*[_type == "leadership"]`);
+
+  return leaders;
+}
+
+export async function getRole(role: string) {
+  const leaders = await client.fetch(
+    `*[_type == "leadership" && role == ${role}]`,
+  );
+
+  return leaders;
+}

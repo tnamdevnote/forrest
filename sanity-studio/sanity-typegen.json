@@ -1,5 +1,5 @@
 {
-  "path": "'./groq/**/*.{ts,tsx,js,jsx}'",
+  "path": "'../src/lib/**/*.{ts,tsx,js,jsx}'",
   "schema": "schema.json",
-  "generates": "./sanity.types.ts"
+  "generates": "../src/lib/sanity.types.ts"
 }

@@ -13,6 +13,7 @@
     "@sanity/client": "^6.19.1",
     "@tanstack/react-query": "^5.45.1",
     "@types/node": "^20.14.0",
+    "framer-motion": "^11.2.11",
     "groq": "^3.44.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

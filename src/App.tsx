@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "./App.css";
-import Card from "./components/Card";
+import Card from "./components/Card/Card";
 import About from "./pages/About";
 
 const queryClient = new QueryClient();

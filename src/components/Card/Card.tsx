@@ -1,6 +1,13 @@
-function Card() {
+import { ButtonHTMLAttributes } from "react";
+
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+function Card(props: CardProps) {
   return (
-    <div className="relative flex h-96 w-72 cursor-pointer flex-col justify-end overflow-hidden rounded-3xl">
+    <div
+      className="relative flex h-96 w-72 cursor-pointer flex-col justify-end overflow-hidden rounded-3xl"
+      {...props}
+    >
       <img
         className="absolute h-full w-full object-cover object-[center]"
         src="./communicator.svg"
